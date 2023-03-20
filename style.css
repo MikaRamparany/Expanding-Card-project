@@ -20,7 +20,16 @@ h1 {
     justify-content: center;
     color: yellowgreen;
     font-size: 45px;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition 0.75s 1.6S ease-out forwards ; /*forwards pour garder les valeurs de fin, sinon la boucle continued */
     
+}
+.panels {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-800px);
+    animation: apparition 0.65s 1.3S ease-out forwards ;
 }
 .Cardscontainer{
     display:flex;
@@ -74,4 +83,11 @@ gap: 10px;
     .Card:nth-of-type(5), .Card:nth-of-type(6){ 
         display: none;
     }
+}
+
+
+@keyframes apparition {
+    100%{
+    opacity: 1;
+    transform : none;}
 }
