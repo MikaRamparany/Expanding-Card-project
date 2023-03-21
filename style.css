@@ -22,14 +22,14 @@ h1 {
     font-size: 45px;
     opacity: 0;
     transform: translateY(-30px);
-    animation: apparition 0.75s 1.6S ease-out forwards ; /*forwards pour garder les valeurs de fin, sinon la boucle continued */
+    animation: apparition 0.75s 2.3S ease-out forwards ; /*forwards pour garder les valeurs de fin, sinon la boucle continued */
     
 }
 .panels {
     display: inline-block;
     opacity: 0;
-    transform: translateY(-800px);
-    animation: apparition 0.65s 1.3S ease-out forwards ;
+    transform: translateX(800px); /* translate X pour apparition horisontale*/
+    animation: apparition 0.70s 2.0s ease-out forwards ;
 }
 .Cardscontainer{
     display:flex;
